@@ -1,12 +1,6 @@
 from wordscore_self import *
 import time
 
-
-#
-#
-# Computer chooses a word
-#
-#
 def compChooseWord(hand, wordList, n):
     """
     Given a hand and a wordList, find the word that gives 
@@ -41,9 +35,8 @@ def compChooseWord(hand, wordList, n):
     # return the best word you found.
     return bestWord
 
-#
+
 # Computer plays a hand
-#
 def compPlayHand(hand, wordList, n):
     """
     Allows the computer to play the given hand, following the same procedure
@@ -97,10 +90,6 @@ def compPlayHand(hand, wordList, n):
     print('Total score: ' + str(totalScore) + ' points.')
 
     
-#
-# Problem #6: Playing a game
-#
-#
 def playGame(wordList):
     """
     Allow the user to play an arbitrary number of hands.
@@ -158,13 +147,6 @@ def playGame(wordList):
         else:
             print("Invalid command.")
 
-
-
-
-        
-#
-# Build data structures used for entire session and play game
-#
 if __name__ == '__main__':
     wordList = loadWords()
     playGame(wordList)
